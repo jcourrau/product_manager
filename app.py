@@ -4,10 +4,22 @@ import customtkinter as ct  # For a more modern style
 from datetime import datetime
 from models import Product
 from db import session, Base, engine
+import json
 
 Base.metadata.create_all(engine)
 
-category_list = ["", "Computers", "Phones", "Audio & Video", "Accessories", "Others"]
+
+# Load categories from categories.json
+def load_categories():
+    with open("categories.json", "r", encoding="utf-8") as file:
+        data = json.load(file)
+        categories = data.get("categories", [""]) # Default to ["-"] if no categories found
+        print(f" Categories loaded: {categories}")
+        return categories
+
+
+# Replace the hardcoded list with the dynamic one
+category_list = load_categories()
 
 '''
 > Implemented Improvements
