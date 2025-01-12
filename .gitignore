@@ -1,0 +1,16 @@
+# Python-specific
+__pycache__/
+*.pyc
+
+# PyInstaller-generated files
+dist/
+build/
+*.spec
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# System-specific files
+.DS_Store
+Thumbs.db
