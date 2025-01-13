@@ -67,7 +67,7 @@ class MainWindow:
         self.create_top_frame(
             parent=self.window,
             frame_title="Add Product",
-            button_text="Edit Product",
+            button_text="Add Product",
             button_command=self.add_product
         )
 
@@ -531,6 +531,9 @@ class EditWindow:
         self.edit_window.wm_iconbitmap("resources/icon.ico")
         self.edit_window.geometry("400x260")  # Initial size
 
+        # Detect manual window close
+        self.edit_window.protocol("WM_DELETE_WINDOW", self.on_close)
+
         # Configuration to center everything in the window
         self.edit_window.grid_columnconfigure(0, weight=1)
         self.edit_window.grid_rowconfigure(0, weight=0)  # Top frame
@@ -546,6 +549,20 @@ class EditWindow:
             name=self.product.name,
             price=self.product.price,
             category=self.product.category
+        )
+
+    def on_close(self):
+        """Handle manual closing of the edit window."""
+        self.main_window.product_button.configure(state="normal")
+        self.edit_window.destroy()
+        self.main_window.get_products()
+
+        # Recreate main window to be able to add new products again.
+        self.main_window.create_top_frame(
+            parent=self.main_window.window,
+            frame_title="Add Product",
+            button_text="Add Product",
+            button_command=self.main_window.add_product
         )
 
     def update_product(self):
@@ -570,19 +587,7 @@ class EditWindow:
             f'The product {self.product.name} has been successfully updated.',
             row=3, color="#dce4ee", pady=0)
 
-        self.edit_window.destroy()
-        self.main_window.get_products()
-
-        # Recreate main window to be able to add new products again.
-        self.main_window.create_top_frame(
-            parent=self.main_window.window,
-            frame_title="Add Product",
-            button_text="Edit Product",
-            button_command=self.main_window.add_product
-        )
-
-        # Re-enable Edit Product button in MainWindow
-        self.main_window.product_button.configure(state="normal")
+        self.on_close()
 
 
 class ConfirmWindow:

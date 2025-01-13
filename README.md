@@ -85,13 +85,13 @@ The product categories displayed in the application can be customized. To modify
 ## Screenshots
 
 ### Add Product
-![img.png](screenshots/img.png)
+![img.png](screenshots/add product.png)
 
 ### Edit Product
-![img_2.png](screenshots/img_2.png)
+![img_2.png](screenshots/edit product.png)
 
 ### Delete Product
-![img_3.png](screenshots/img_3.png)
+![img_3.png](screenshots/delete product.png)
 
 ## Considerations
 

@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de62ddf-5805-4ba7-a4c3-c530d6539765" name="Changes" comment="">
+    <list default="true" id="9de62ddf-5805-4ba7-a4c3-c530d6539765" name="Changes" comment="categories Json load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/products.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/products.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/add product.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/added product.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/edit product.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/delete product.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +57,19 @@
       <option name="presentableId" value="Default" />
       <updated>1736718350271</updated>
     </task>
+    <task id="LOCAL-00001" summary="categories Json load">
+      <option name="closed" value="true" />
+      <created>1736726076834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736726076834</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="categories Json load" />
+    <option name="LAST_COMMIT_MESSAGE" value="categories Json load" />
   </component>
 </project>
